@@ -25,7 +25,7 @@ In my project focused on the early detection of skin cancer, the initial step in
 
 |Conditions|Count|
 | - | - |
-|<p>Melanocytic Nevi (nv) Melanoma (mel)</p><p>Benign Keratosis (bkl) Basal Cell Carcinoma (bcc) Actinic Keratoses (akiec) Vascular Skin Lesions (vasc) Dermatofibroma (df)</p>|6705 1113 1099 514 327 142 115|
+|<p>Melanocytic Nevi (nv)</p><p> Melanoma (mel)</p><p>Benign Keratosis (bkl) </p><p> Basal Cell Carcinoma (bcc) </p><p>Actinic Keratoses (akiec) </p><p>Vascular Skin Lesions (vasc) </p><p>Dermatofibroma (df)</p>|<p>6705 </p><p> 1113</p><p> 1099</p><p> 514 </p><p>327 </p><p>142 </p><p>115 </p>|
 
 Table 1: Number of Cases for Each Skin Condition
 
@@ -75,7 +75,7 @@ For training, I used the ADAM optimizer with an initial learning rate of 0.0001 
 
 These elements of the model’s architecture and training process were meticulously chosen to optimize its performance for the complex task of classifying dermatological images. The combination of these strategies aimed to ensure efficient convergence and retention of the most effective model weights for accurate classification.
 
-![](Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.002.png)
+![](img/Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.002.png)
 
 Figure 1: Training/Validation Loss (CNN)
 
@@ -87,7 +87,7 @@ The training of this model is splitted into 2. Initially, the convolutional base
 
 The loss, accuracy of the model with and without fine-tune are shown in the figures below:
 
-![](Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.003.png)
+![](img/Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.003.png)
 
 Figure 2: Training/Validation accuracy (MobileNetV2)
 
@@ -95,11 +95,11 @@ Figure 2: Training/Validation accuracy (MobileNetV2)
 
 In my comparative analysis of the MobileNetV2-based transfer learning approach and the simpler Convolutional Neural Network (CNN), the MobileNetV2 model demonstrated superior performance. It achieved an impressive accuracy of 91%, exceeding the CNN’s 87%. This 4% increase in accuracy underscores the effectiveness of using a pre-trained model like MobileNetV2 for dermatological image classification. Moreover, the consistent performance across precision, recall, accuracy, and F1 score metrics further substantiates the superiority of the MobileNetV2 model.
 
-![](Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.004.png)
+![](img/Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.004.png)
 
 Figure 3: Classification Report (CNN)
 
-![](Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.005.png)
+![](img/Aspose.Words.86b304d2-9ead-4d8b-b925-622ce1b566a5.005.png)
 
 Figure 4: Classification Report (MobileNetV2)
 
